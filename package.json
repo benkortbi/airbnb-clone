@@ -1,4 +1,5 @@
 {
+  "homepage": "https://benkortbi.github.io/airbnb-clone",
   "name": "app",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "node ./node_modules/gh-pages/bin/gh-pages.js -d build",
+    "deploy": "npm run build",
     "start": "node ./node_modules/react-scripts/bin/react-scripts.js start",
     "build": "node ./node_modules/react-scripts/bin/react-scripts.js build",
     "test": "node ./node_modules/react-scripts/bin/react-scripts.js test",
